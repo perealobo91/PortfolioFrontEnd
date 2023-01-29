@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/estilo.css">
+    <title>Desarrollador Web</title>
+</head>
+
+<!--Agregué los iconos referentes a la edicion como indica la imagen de referencia, no obstante aún no poseen 
+funcionalidad, por lo que todabia es solo maquetadO-->
+<!---->
+<body>
+    <!--Seccion Inicio-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <div class="img-logo">
+                        <img src="./assets/img/arg-programa.png" alt="" title="Proyecto Argentina Programa">
+                        <div class="proyecto">
+                         <h1 style="font-size: 20px;">/#YoProgramo/</h1>
+                        </div>
+                       
+                    </div>
+                    
+                    
+                    
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li class="inicio-b"><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#educacion" onclick="seleccionar(this)">EDUCACION</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="bi bi-list"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+
+                    <div id="login">
+                        <a href="./assets/pages/login.html"><i class="bi bi-person-fill-lock"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Acerca de... -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="./img/foto (1).jpg" alt="">
+            <div>
+                <span class="icono-edicion"><i class="bi bi-pencil-fill"></i></span>
+                <span class="icono-cierre"><i class="bi bi-x-circle-fill"></i> </span>
+            </div>
+            
+        </div>
+
+            
+
+        <div class="sobremi">
+            
+
+        
+        <p class="titulo-seccion">Sobre Mi </p>
+        <div>
+            <span class="icono-edicion"><i class="bi bi-pencil-fill"></i></span>
+            <span class="icono-cierre"><i class="bi bi-x-circle-fill"></i> </span>
+        </div>
+        
+            <h2>Hola, Soy <span>Francisco Perea</span> </h2>
+            <h3>Full Stack Developer Jr</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur reprehenderit voluptatibus blanditiis nulla adipisci iste fuga expedita, ea exercitationem dicta, similique rem, atque soluta recusandae ipsam autem. Sapiente, quo ducimus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a beatae natus.</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+    <!--Sección Experiencia(no se que poner ...)-->
+
+    <!--Seccion Educacion-->
+    <section id="educacion">
+        <h3 class="titulo-seccion">Educación</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><img class="img-logo" src="./Assets/Img/log_IR.jpg" alt=""></span>
+                <span class="icono-edicion"><i class="bi bi-pencil-fill"></i> </span>
+                <h4>Educación Secundaria</h4>
+                <hr>
+                <ul class="educacion-tag">
+                    <li>Istituto de la Reupublica</li>
+                    <li>Título:Prouducción de Bienes y educacion</li>
+                </ul>
+                <p>Orientada al área empresarial con enfoque a los servicos y resolución de problemas.</p>
+                <span class="icono-edicion"><i class="bi bi-pencil-fill"></i></span>
+                <span class="icono-cierre"><i class="bi bi-x-circle-fill"></i> </span>
+            </div>
+            <div class="servicio">
+                
+                <span class="icono"><img class="img-logo" src="./Assets/Img/log_ies.jpg" alt=""></span>
+                <span class="icono-edicion"><i class="bi bi-pencil-fill"></i> </span>
+                <h4>Educación Terciaria</h4>
+                <hr>
+                <ul class="educacion-tag">
+                    <li>IES Concepción</li>
+                    <li>Título:Tec. Sup. en Computación y Redes</li>
+                </ul>
+                <p>Dota al estudiante con los conocimientos cientificos y técnicos para desempeñarse con idoneidad en 
+                  el ámbito de infraestructura de las tecnologias de la información.
+                </p>
+                <span class="icono-edicion"><i class="bi bi-pencil-fill"></i></span>
+                <span class="icono-cierre"><i class="bi bi-x-circle-fill"></i> </span>
+            </div>
+            <div class="servicio">
+                <span class="icono"><img class="img-logo" src="./Assets/Img/logo_cepro.jpg" alt=""></span>
+                <span class="icono-edicion"><i class="bi bi-pencil-fill"></i> </span>
+                <h4>Cursos/Capacitaciones</h4>
+                <hr>
+                <ul class="educacion-tag">
+                    <li>Institución:CEPRO|</li>
+                    <li>Operador de PC-Diseño Grafico</li>
+                </ul>
+                <p>2014-Centro Educativo Proyectar CEPRO-Operador de PC Junior-Manejo de PC y Paquete Office-Bases del Diseño gráfico-Uso del Programa Corel Draw3-Carga horaria de 240 Hs. Cátedra.
+                </p>
+                <span class="icono-edicion"><i class="bi bi-pencil-fill"></i></span>
+                <span class="icono-cierre"><i class="bi bi-x-circle-fill"></i> </span>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><img class="img-logo" src="./Assets/Img/logo_fundaciónjf.jpg" alt=""></span>
+                <span class="icono-edicion"><i class="bi bi-pencil-fill"></i> </span>
+                <h4>Cursos/Capacitaciones</h4>
+                <hr>
+                <ul class="educacion-tag">
+                    <li>Institución:Fundacion Jovenes del Futuro</li>
+                    <li>Formación de Paramedico</li>
+                </ul>
+                <p>2022-Fundaión Jóvenes del Futuro-Formación de Paramédico-Maniobras de Inmovilización y traslado-Acreditación 120 Horas Cátedra</p>
+                <span class="icono-edicion"><i class="bi bi-pencil-fill"></i></span>
+                <span class="icono-cierre"><i class="bi bi-x-circle-fill"></i> </span>
+            </div>
+            <div class="servicio">
+                <span class="icono"><img class="img-logo" src="./Assets/Img/logo_sistem.jpg" alt=""></span>
+                <span class="icono-edicion"><i class="bi bi-pencil-fill"></i> </span>
+                <h4>Cursos/Capacitaciones</h4>
+                <hr>
+                <ul class="educacion-tag">
+                    <li>Institución:SISTEM</li>
+                    <li>Secr.Adm. Computacional</li>
+                </ul>
+                <p>2021-Centro de Capacitación SYSTEM-Operador de PC-Secretariado Administrativo Computacional-Nociones de Mecanografía-Redacción Comercial- Carga horaria de 144 Hs. Cátedra. </p>
+                <span class="icono-edicion"><i class="bi bi-pencil-fill"></i></span>
+                <span class="icono-cierre"><i class="bi bi-x-circle-fill"></i> </span>
+            </div>
+            <div class="servicio">
+                <span class="icono"><img class="img-logo" src="./Assets/Img/logo_cui.jpg" alt=""></span>
+                <span class="icono-edicion"><i class="bi bi-pencil-fill"></i> </span>
+                <h4>Cursos/Capacitaciones</h4>
+                <hr>
+                <ul class="educacion-tag">
+                    <li>Institución:Centro de Idiomas Cui-Uba</li>
+                    <li>|Idioma:Ingles-Técnico</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
+                <span class="icono-edicion"><i class="bi bi-pencil-fill"></i></span>
+                <span class="icono-cierre"><i class="bi bi-x-circle-fill"></i> </span>
+            </div>
+            
+        </div>
+        <span class="icono-edicion" style="font-size: 30px;"><i class="bi bi-plus-circle-dotted"></i></span>
+      </section>
+
+    <!--Seccion Hard & Soft Skill-->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="icono-edicion"><i class="bi bi-pencil-fill"></i> </span> <span class="icono-cierre"><i class="bi bi-x-circle-fill"></i> </span> Html & Css </p>
+                <span class="porcentaje">75%</span>
+                
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="icono-edicion"><i class="bi bi-pencil-fill"></i></span><span class="icono-cierre"><i class="bi bi-x-circle-fill"></i> </span> Javascript</p>
+                <span class="porcentaje">30%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="icono-edicion"><i class="bi bi-pencil-fill"></i></span><span class="icono-cierre"><i class="bi bi-x-circle-fill"></i> </span>  Bases de Datos</p>
+                <span class="porcentaje">25%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="icono-edicion"><i class="bi bi-pencil-fill"></i></span><span class="icono-cierre"><i class="bi bi-x-circle-fill"></i> </span>  Photoshop</p>
+                <span class="porcentaje">85%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/imagen-portfolio.png" alt="">
+                <div class="info">
+                    <h4>Portfolio web</h4>
+                    <p>Maquetado Estático</p>
+                    <span class="icono-edicion"><i class="bi bi-pencil-fill"></i> </span>
+                    <span class="icono-cierre"><i class="bi bi-x-circle-fill"></i> </span>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/imagen-album.png" alt="">
+                <div class="info">
+                    <h4>Albúm Fotografico</h4>
+                    <p>Maquetado Estático</p>
+                    <span class="icono-edicion"><i class="bi bi-pencil-fill"></i> </span>
+                    <span class="icono-cierre"><i class="bi bi-x-circle-fill"></i> </span>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/proyecto-web.png" alt="">
+                <div class="info">
+                    <h4>Proyecto de Web-Literaria</h4>
+                    <p>Maquetado Estático</p>
+                    <div>
+                        <span class="icono-edicion"><i class="bi bi-pencil-fill"></i> </span>
+                        <span class="icono-cierre"><i class="bi bi-x-circle-fill"></i> </span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <center><span class="icono-edicion" style="font-size: 30px;"><i class="bi bi-plus-circle-dotted"></i></span></center>
+    </section>
+
+    <!--Seccion Contacto-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contacto</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!--Seccion Footer-->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
